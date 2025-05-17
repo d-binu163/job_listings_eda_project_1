@@ -60,9 +60,9 @@ Install dependencies
 
 📊 Example Visualizations
 
-![Category Distribution](images/top_category.png)
-![Monthly Frequency Distribution](images/monthly_postings_sales.png)
-![Regional Distribution](images/booming_regions.png)
+![Category Distribution](top_category.png)
+![Monthly Frequency Distribution](monthly_postings_sales.png)
+![Regional Distribution](booming_regions.png)
 
 📌 Possible Future Work
 
