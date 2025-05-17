@@ -1,0 +1,90 @@
+Step 1: Checking Data
+    Shape
+    Columns
+    Sample (Head)
+    Describe
+    Check Null Values
+    Check Incorrect Values
+    Check Inconsistencies
+
+Step 2: Cleaning Data
+    Remove Duplicates if any
+    Handle Missing Values
+    Handle incorrect values
+    Handle inconsitencies
+    Standardize Column Names
+    Normalize Data (Remove whitespaces, punctuations, make lowercases etc.)
+    Standardize dates (Convert posted days to date time)
+    Trim Whitespaces
+    Clean Location Field for categorization
+    Validate and fix broken links
+    Create a clean copy to do EDA on the cleaned data
+
+
+Step 3: EDA
+
+    Top Job Categories by count
+    [Category].value_count().plot(barh)
+    How many jobs are listed in each category
+    Distribution of Jobs by each category 
+    Count jobs in each category
+    Which category is in most demand
+    
+    Top Companies per category
+    For each category, which companies hire the most
+    Grouped Bar Chart, top 5 per category
+    
+    Most frequent companies
+    [Company]value_counts().head(10)
+    Which companies hire the most
+    
+    Jobs over time
+    [Date]value_counts().sort_index().plot(bar)
+    Identify hiring spikes. Which time might a job be posted more, start or end of a month or week. Line or bar chart. 
+    
+    Posting Frequency per category
+    Number of jobs posted per day in each category
+    Useful to understand how dynamic or stable the hiring is in different roles
+    
+    Top Job titles per category
+    Within each category, which are most common
+    
+    Most Common Job Titles
+    Normalize tirles *convert to lower cases, remoce punctuations*
+    Group and count similar titles
+    Use frequency plot or word cloud
+    
+    Remote locations breakdown
+    [Location]value_counts().head(10)
+    Create a piechart on location availability 
+    Which countries are most mentioned 
+    
+    Posting activity by Category
+    Heatmap of Category vs posted date
+    
+
+Step 4: Feature Engineering:
+
+    Add Remote Type from location
+    Global, Americas Only, etc.
+    
+    Posted on which day
+    Eg: Monday is popular for posting 
+    
+    Job Level if available
+    Senior, Lead, Principal = Senior
+    Manager, Director, Head = Managerial
+    Junior, Intern, Entry = Junior
+    Otherwise = Midlevel
+
+
+Step 5: Insights
+
+
+    Example Insights:
+    _category_ has the most remote friendly jobs globally
+    _category_ is more likely to be us based
+    _catgegory_ roles are most frequently posted
+    _category_ saw a spike in early May
+    Do _joblevel_ appear more in Global or US
+    Which day sees the most postings
